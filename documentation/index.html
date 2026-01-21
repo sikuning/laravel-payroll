@@ -1,0 +1,448 @@
+<!doctype html>
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>Payroll Management</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+    <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script>document.createElement('section');
+    var duration = '500', easing = 'swing';
+
+    $(function () {
+        $("#documenter_nav li a").click(function () {
+            var id = $(this).attr('href');
+            $('#documenter_nav').find('.current').removeClass('current');
+            $(this).addClass('current');
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 2000);
+        });
+    });
+
+    </script>
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        html {
+            background-color: #FFFFFF;
+            color: #383838;
+        }
+
+        ::-moz-selection {
+            background: #333636;
+            color: #00DFFC;
+        }
+
+        ::selection {
+            background: #333636;
+            color: #00DFFC;
+        }
+
+        #documenter_sidebar #documenter_logo{
+            padding: 20px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #E0224B;
+            font-size: 25px;
+            text-align: center;
+        }
+        a {
+            color: #008C9E;
+        }
+
+        .btn {
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #008C9E, #006673);
+            background-image: -ms-linear-gradient(top, #008C9E, #006673);
+            background-image: -webkit-gradient(linear, 0 0, 0 008 C9E%, from(#343838), to(#006673));
+            background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+            background-image: -o-linear-gradient(top, #008C9E, #006673);
+            background-image: linear-gradient(top, #008C9E, #006673);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+            border-color: #006673 #006673 #bfbfbf;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            border-color: #008C9E #008C9E #bfbfbf;
+            background-color: #006673;
+        }
+
+        hr {
+            border: 1px solid #E0224B;
+        }
+
+        #documenter_sidebar, #documenter_sidebar ul a {
+            background-color: #0775C0;
+            color: #FFFFFF;
+        }
+
+        /*		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}*/
+        /*		#documenter_sidebar ul{border-top:1px solid #212424;}*/
+        #documenter_sidebar ul a {
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px;
+        }
+
+        #documenter_sidebar ul a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        #documenter_sidebar ul a.current {
+            background: rgba(255,255,255,0.3);
+        }
+        
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        .slimScrollBar {
+            z-index: 1000 !important;
+        }
+
+        #documenter_cover h1{
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body class="documenter-project-hrm">
+<div id="documenter_sidebar">
+    <div id="documenter_logo">Payroll Management</div>
+    <ul id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+        <li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+        <li><a href="#server_requirements" title="Getting Started">Server Requirements</a></li>
+        <li><a href="#installation" title="Getting Started">Installation</a></li>
+        <li><a href="#feature" title="Getting Started">Feature</a></li>
+        <li><a href="#setting" title="Settings">Settings</a></li>
+        <li><a href="#dashboard" title="dashboard">Dashboard</a></li>
+        <li><a href="#payment" title="dashboard">Employee Login</a></li>
+    </ul>
+   
+</div>
+<div id="documenter_content">
+    <section id="documenter_cover">
+        <h1>Payroll Management</h1>
+        
+        <hr>
+    </section>
+
+    <section id="getting_started">
+        <div class="page-header"><h3>Getting Started</h3>
+            <hr class="notop">
+        </div>
+        <p>Laravel Payroll Managementis a payroll solution, perfect for any organization. Manage multiple departments, employees and much more from an intuitive admin panel that you’ll love to use.</p>
+    <section id="server_requirements">
+        <div class="page-header"><h3>Server Requirements</h3>
+            <hr class="notop">
+        </div>
+        <div>
+            The Server needs to meet the following requirement to the application.
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <ol>
+            <li>
+                Laravel &gt;= 10.0
+            </li>
+            <li>
+                PHP &gt;= 8.1
+            </li>
+            <li>
+                BCMath PHP Extension
+            </li>
+            <li>
+                Ctype PHP Extension
+            </li>
+            <li>
+                cURL PHP Extension
+            </li>
+            <li>
+                DOM PHP Extension
+            </li>
+            <li>
+                Fileinfo PHP Extension
+            </li>
+            <li>
+                JSON PHP Extension
+            </li>
+            <li>
+                Fileinfo PHP Extension
+            </li>
+            <li>
+                Mbstring PHP Extension
+            </li>
+            <li>
+                OpenSSL PHP Extension
+            </li>
+            <li>
+                Mbstring PHP Extension
+            </li>
+            <li>
+                PCRE PHP Extension
+            </li>
+            <li>
+                PDO PHP Extension
+            </li>
+            <li>
+                Tokenizer PHP Extension
+            </li>
+            <li>
+                XML PHP Extension
+            </li>
+        </ol>
+    </section>
+    <section id="installation">
+        
+        <div class="page-header"><h3>Installation</h3>
+            <hr class="notop">
+        </div>
+
+        <div style="white-space: normal;">
+            Pre-installation Requirements:
+        </div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div style="white-space: normal;">
+            File System Permissions
+        </div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div style="white-space: normal;">
+            To be able to start the installation at all, you must set appropriate permissions for storage folder and
+            it's
+            subfolders. So, the very first thing to do is to set permissions to 777 for storage folder, all its
+            subfolders.
+        </div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div style="white-space: normal;">
+            After setting the permissions you are ready to proceed to the installation.
+        </div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div style="white-space: normal;">
+            After downloading the ZIP archive, and uploading it to your server, the first thing you have to do is to
+            create the database where system tables will be created. Let's say, you create the database called <strong>yb_payroll</strong>.
+        </div>
+        <div style="white-space: normal;">
+            <hr>
+            <h2>
+                Step 1 - Welcome Screen</h2>
+
+            <p>
+                After creating the database next step is accessing the application URL from a browser. One thing you
+                need to know is that Laravel is designed to allow HTTP access to the application from your public folder
+                only. This means that this application will be available at yourdomain.com/public. It is good enough for
+                installation and development purposes, however, for production, you will probably want to have your
+                application available at yourdomain.com. In next section, I will show you how you can accomplish
+                that.</p>
+
+            <div class="alert alert-error" style="white-space: normal;">
+                <strong>Note</strong>: If you see any error check that you should have <strong>.env</strong> file at
+                your root location.
+            </div>
+
+
+            <p>
+                To open the installer. Visit&nbsp;</p>
+            <div class="alert alert-info">
+                <span style="font-family: Arial, verdana, arial, sans-serif;">yourdomain.com/install</span></div>
+                <p>
+                    OR On Local Sysytem. Visit&nbsp;</p>
+                <div class="alert alert-info">
+                    <span style="font-family: Arial, verdana, arial, sans-serif;">localhost/FOLDER_NAME/install</span></div>
+        </div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div style="white-space: normal;">
+            Now the installer will show up.The First screen will be Welcome Screen
+        </div>
+        <div style="white-space: normal;">
+            <img alt="" src="assets/images/img-1.png" style="width: 80%;"></div>
+        <div style="white-space: normal;">
+            &nbsp;
+        </div>
+        <div class="alert alert-error" style="white-space: normal;">
+            <strong>Note</strong>: If you are not able to access the website by accessing yourdomain.com/install,
+            but you are able to access it via yourdomain.com/public/index.php/install, this means that you probably
+            don't
+            have Apache mod_rewrite installed and enabled.
+        </div>
+        <h2 style="white-space: normal;">
+            &nbsp;</h2>
+
+        <h2 style="white-space: normal;">
+            Step 2: System Requirements</h2>
+
+        <p style="white-space: normal;">
+            After clicking on "Next" button, you will be redirected to System &nbsp;Requirements step during
+            the installation wizard, System Requirements.</p>
+
+        <p style="white-space: normal;">
+            <img alt="" src="assets/images/img-2.png" style="width: 80%;"></p>
+
+        <h2 style="white-space: normal;">
+            Step 3 - Directory Permissions</h2>
+
+        <div>
+            After successfully enabling and installing all required PHP extensions, next step is to set the appropriate
+            permissions for some system folders. All directories listed on step 4 has to be writable by the application,
+            as it is displayed on the following picture.
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        
+        <div>
+            <img alt="" src="assets/images/img-3.png" style="width: 80%;"></div>
+
+            
+        <div>
+            &nbsp;
+        </div>
+
+        <h2 style="white-space: normal;">
+            Step 4 - Environment Setting</h2>
+
+        <p style="white-space: normal;">
+            <img alt="" src="assets/images/img-4.png" style="width: 80%;"></p>
+
+        <h2 style="white-space: normal;">
+            Step 5 - Database Setting</h2>
+
+        <p style="white-space: normal;">
+            On step 2 you have to fill in your database credentials&nbsp;</p>
+
+        <p style="white-space: normal;">
+            <img alt="" src="assets/images/img-5.png" style="width: 80%;"></p>
+        <h2>
+            Step 6: Exit</h2>
+
+        <p>
+            The last step is exit step.</p>
+
+        <p>
+            <img alt="" src="assets/images/img-6.png" style="width: 603px;"></p>
+
+        <div>
+            Now You are ready to go.
+        </div>
+        
+    </section>
+    <section id="feature">
+        <div class="page-header"><h3>Features </h3>
+            <hr class="notop">
+        </div>
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <h4>Payroll Management Features</h4>
+                    <ol>
+                        <li> Employees Management</li>
+                        <li> Department Management</li>
+                        <li> Designations Management</li>
+                        <li> Pay Grade Management</li>
+                        <li> Attendance Management</li>
+                        <li> Payroll Management</li>
+                        <li> Leaves Management</li>
+                        <li> General Settings</li>
+                        <li> Profile Settings</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="setting">
+        <div class="page-header"><h3>Setting Up Application</h3>
+            <hr class="notop">
+        </div>
+        <p>After your successfull install your application, now you need to setting your app. <br/>
+            Log to your application and go to :
+        </p>
+        <div>
+            &nbsp;
+        </div>
+        <p class="warning">
+            For Admin Login Visit : yourdomain.com
+        </p>
+        <div>
+            Login details are
+        </div>
+
+        <pre class="prettyprint lang-html linenums">
+Username: admin
+            
+Password: 123456 </pre>
+        <p>
+            &nbsp;</p>
+
+        <p class="warning">
+            Go to : Settings &raquo; General Setting
+        </p>
+        <h4> General Setting </h4>
+
+        <p><img src="assets/images/settings.png" style="width:80%"/></p>
+    </section>
+    <section id="dashboard">
+        
+        <div class="page-header"><h3>Dashboard</h3>
+            <hr class="notop">
+        </div>
+        <p><img src="assets/images/dashboard.png" style="width:70%"/></p>
+    </section>
+    <section id="payment">
+        
+        <div class="page-header"><h3>Employee Login</h3>
+            <hr class="notop">
+        </div>
+        <p class="warning">
+            For Admin Login Visit : yourdomain.com/employee-login
+        </p>
+
+        
+        <p><img src="assets/images/employee.png" style="width:70%"/></p>
+    </section>
+    
+</div>
+
+</body>
+</html>
