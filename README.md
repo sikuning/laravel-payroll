@@ -1,3 +1,6 @@
+See Details : https://sikuning.github.io/laravel-payroll/#!/dashboard
+
+
 # Payroll Management
 
 Laravel Payroll Management is a complete payroll solution, perfect for any organization.  
